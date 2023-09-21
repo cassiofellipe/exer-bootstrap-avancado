@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Bootstrap</title>
+    <!-- Adicione o link para o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilo personalizado */
+        /* Estilo para o carousel */
+        .carousel-inner img {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Estilo para o grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilo para os cards */
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Carousel de Imagens -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2023/09/05/16/40/sunrise-8235464_1280.jpg" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2023/09/10/11/16/solar-8244680_1280.jpg" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2023/04/23/16/03/white-flowers-7946058_1280.jpg" alt="Imagem 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Layout com Grid Responsivo -->
+    <div class="container">
+        <h2>Itens do Grid</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Conteúdo do Card 1</p>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Conteúdo do Card 2</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Conteúdo do Card 3</p>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Conteúdo do Card 4</p>
+            </div>
+            <div class="card">
+                <h3>Card 5</h3>
+                <p>Conteúdo do Card 5</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione o link para o JavaScript do Bootstrap (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
